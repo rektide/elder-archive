@@ -1,36 +1,30 @@
 {"@context": {
-	"@base": "https://archive.eldergods.com/@s",
+	"@base": "https://archive.eldergods.com/@s/",
 
-	"parameters": {
-		"@id": "https://archive.eldergods.com/@s/parameters",
-		"@type": "https://archive.eldergods.com/parameter",
-		"@container": "@list"
+	"type": {
+		"@id": "https://archive.eldergods.com/@s/type/",
+		"@type": "@id"
 	},
-	"parameterArgument": {
-		"@id": "https://archive.eldergods.com/@s/parameter"
-	},
-	"parameterIs": {
-		"@id": "https://archive.eldergods.com/@s/paramter/is",
-		"@type": "https://archive.eldergods.com/@s/parameter"
-	},
+	"object": "https://archive.eldergods.com/@s/Object/",
+	"Object": "https://archive.eldergods.com/@s/Object/",
+	"parameter": "https://archive.eldergods.com/@s/parameter/",
+	"function": "https://archive.eldergods.com/@s/function/",
+	"property": "https://archive.eldergods.com/@s/property/",
 
-	"annotations": {
-		"@id": "https://archive.eldergods.com/@s/annotations",
-		"@type": "https://archive.eldergods.com/@s/annotation",
-		"@container": "@list"
-	},
-	"annotation": {
-		"@type": "https://archive.eldergods.com/@s/annotation/case",
-		"type": {
-			"@id": "@type" },
-		args: {
-			"@type": "object",
-			"@container": "@list"
-		}
-	},
-
-	"object": {
-		"@type": "https://archive.eldergods.com/@s/object"
-	}
-
-}
+	"parameter:is": "type",
+	"parameter:annotate": { "@type": "Object", "@container": "@list" },
+	"property:is": "type",
+	"property:annotate": { "@type": "Object", "@container": "@list" },
+	"type:extends": { "@type": "type" },
+	"type:annotations": { "@type": "Object", "@container": "@list" },
+	"type:parameters": { "@type": "parameter", "@container": "@list" },
+	"type:properties": { "@type": "property", "@container": "@index" },
+	"Object:constructor": { "@type": "type" },
+	"Object:args": { "@type": "Object", "@container": "@list" },
+	"Object:types": { "@type": "type" },
+	"Object:annotations": { "@type": "Object", "@container": "@list" },
+	"Object:properties": { "@type": "property", "@container": "@index" },
+	"function:annotations": { "@type": "Object", "@container": "@list" },
+	"function:parameters": { "@type": "parameter", "@container": "@list" },
+	"function:returns": { "@type": "type" }
+}}
