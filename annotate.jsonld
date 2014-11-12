@@ -1,0 +1,36 @@
+{"@context": {
+	"@base": "https://archive.eldergods.com/@s",
+
+	"parameters": {
+		"@id": "https://archive.eldergods.com/@s/parameters",
+		"@type": "https://archive.eldergods.com/parameter",
+		"@container": "@list"
+	},
+	"parameterArgument": {
+		"@id": "https://archive.eldergods.com/@s/parameter"
+	},
+	"parameterIs": {
+		"@id": "https://archive.eldergods.com/@s/paramter/is",
+		"@type": "https://archive.eldergods.com/@s/parameter"
+	},
+
+	"annotations": {
+		"@id": "https://archive.eldergods.com/@s/annotations",
+		"@type": "https://archive.eldergods.com/@s/annotation",
+		"@container": "@list"
+	},
+	"annotation": {
+		"@type": "https://archive.eldergods.com/@s/annotation/case",
+		"type": {
+			"@id": "@type" },
+		args: {
+			"@type": "object",
+			"@container": "@list"
+		}
+	},
+
+	"object": {
+		"@type": "https://archive.eldergods.com/@s/object"
+	}
+
+}
