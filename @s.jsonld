@@ -15,6 +15,7 @@
 	"parameter:annotate": { "@type": "Object", "@container": "@list" },
 	"property:is": "type",
 	"property:annotate": { "@type": "Object", "@container": "@list" },
+	"type:id": { "@type": "@id" },
 	"type:extends": { "@type": "type" },
 	"type:annotations": { "@type": "Object", "@container": "@list" },
 	"type:parameters": { "@type": "parameter", "@container": "@list" },
